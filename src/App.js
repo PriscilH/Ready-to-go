@@ -1,25 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import assets from "./assets/favicon.png";
+import Switch from './components/Switch';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className='App'>
+      <header>
+        <div className='Header'>
+        <img src={assets} alt="img"></img>
+        <h1>Ready To Go</h1>
+        </div>
       </header>
+      <div>
+        <Switch />
+      </div>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
-}
+};
 
 export default App;
